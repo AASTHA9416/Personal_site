@@ -1,0 +1,237 @@
+body{
+    margin: 0;
+}
+
+#hero{
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#hero::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url('./assests/top-view-dark-office-desk-with-copy-space-tablet-keyboard-stationery-camera-creative-mock-up-scene_67155-14243.avif');
+    background-position: center;
+    background-size: cover;
+    filter: blur(7px);
+    z-index: -1;
+    position: absolute;
+}
+#front-image{
+ background-image: url('./assests/white_bg_cup_of_tea.jpg');   
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    background-position: center;
+    z-index: 1;
+ height: 75%;
+ width: 80%;
+ border-radius: 1%;
+ /* overflow: hidden; */
+}
+#hero-container{
+  transform: translate(50%,-1%);
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#front-image img{
+  
+width: 35%;
+object-fit: cover;
+object-position: 0;
+border-radius: 50%;
+border: 0.2px solid #212020;
+clip-path: (10%,0,15%,0);
+}
+.name{
+  font-size: 4rem;
+  margin: 0%;
+font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #212020;
+}
+
+
+
+
+
+/* education */
+#education{
+  background-color: #ddd8d1;
+  /* height: 70vh; */
+  padding-bottom: 5%;
+  /* overflow: hidden; */
+}
+#education-details{
+  height: 100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#education-heading{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#education-details h1{
+  font-size: 3rem;
+
+  margin-left: 2%;
+}
+hr{
+  width: 80%;
+}
+
+
+/* skills */
+#skills{
+  /* height: 70vh; */
+  background-color: #0c0c0c;
+  color:#ddd8d1 ;
+  padding-bottom: 5%;
+}
+#skills-details{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+#skills-heading{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+#skills-heading h1{
+  font-size: 3rem;
+  margin-left: 2%;
+}
+#skills-heading img{
+  background-color: aliceblue;
+}
+#skills-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+  width: 80%;
+}
+
+
+/* About me */
+#about-me{
+  background-color:#ddd8d1 ;
+  padding-bottom: 2%;
+}
+
+
+#about-me-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about-me-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+#about-me-heading h1{
+  font-size: 3rem;
+  margin-left: 2%;
+}
+
+#about-me-links{
+  display: flex;
+  justify-content: space-around;
+ width: 20%;
+}
+
+
+
+#contact-me{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  
+}
+#contact-me a{
+margin: 0%;
+}
+#contact-me p{
+  margin: 0%;
+}
+
+
+@media screen and (max-width:640px) {
+  #front-image img{
+    width: 50%;
+    
+  }
+  #hero-section{
+   
+    transform: none;
+  }
+  .name{
+    font-size: 2.5rem;
+  }
+  #skills-content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+    gap: 0.31rem;
+
+  }
+  #skills-heading{
+    width: 80%;
+  }
+  #about-me-links{
+width:50% ;
+}
+ #contact-me{
+  width: 90%;
+ }
+ 
+}
+
+@media screen and (min-width:641px) and (max-width:1024px){
+  #front-image img{
+    width: 45%;
+    
+  }
+  
+ #skills-content{
+ width: 95%;
+
+ }
+#about-me-links{
+width:40% ;
+}
+ #contact-me{
+  width: 70%;
+ 
+ }
+
+}
